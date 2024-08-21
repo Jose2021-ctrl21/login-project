@@ -1,0 +1,274 @@
+/* MOBILE VIEW */
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 320px) {
+    
+    /* For login page */
+
+        .artboard,
+        .banner-carousel,
+        .service,
+        .about-us,
+        .news,
+        .google-map-container{
+            width: 100%;
+            height:auto;
+        }
+
+        /* header */
+        .header{
+            position:relative;
+            width: 100%;
+            height: 60px;
+        }
+
+        .header ul{
+            display: none;
+            position:absolute;
+            width:100%;
+            height:540px;
+            z-index:500;
+            /* border:1px solid red; */
+            top:60px;
+            background: #00000099;
+        }
+
+        .header ul li{
+            border:1px solid #0000004D;
+            width:320px;
+            padding:10px 0px;
+        }
+
+        .header ul li a{
+            padding-left:5px;
+            color:#FFF000;
+        }
+
+        ul li button{
+            padding:15px 119px 14px 119px;
+            border-radius: 5px;
+            margin-left:10px;
+        }
+
+        .dummy{
+            padding:18px 0px 18px 15px;
+        }
+
+
+        /* MENU */
+        .menu-bar{
+            padding:15px 15px 0px 0px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .bar1, .bar2, .bar3{
+            width: 28px;
+            height: 3px;
+            background-color: #333333;
+            margin: 6px 0;
+        }
+        .change .bar1 {
+            transition: all .5s ease-in-out;
+            transform: translate(0, 9px) rotate(-45deg);
+        }
+        .change .bar2 {opacity: 0;}
+        .change .bar3 {
+            transition: all .5s ease-in-out;
+            transform: translate(0, -10px) rotate(45deg);
+        }
+
+        /* login box */
+        .box-container{
+            height:auto;
+            margin-bottom: 80px;
+        }
+        .box-container  .small-box{
+            width:290px;
+            height:auto;
+            margin-top:15px;
+            /* margin-left: 15px; */
+        }
+
+        .alignment1,
+        .alignment2,
+        .alignment3{
+            margin-top: 15px !important;
+            padding:0 !important;
+        }
+
+        .privacy-terms-container{
+            padding:0 !important;
+        }
+
+
+        input[type="text"] {
+            width: 242px;  
+            height: 42px; 
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        input.sign-in-btn{
+            padding: 8px 22px 11px 23px !important;
+        }
+
+        .alignment3 a.forget-password{
+            margin-left:35px;
+        }
+
+        .signin-title{
+            font-size: 32px;;
+            line-height: 39px;
+        }
+        .banner{
+            width: 320px;
+            height: 140px;
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Footer */
+        .footer{
+            width: 100%;
+            height:60px;
+            /* margin-top: 80px; */
+        }
+        
+
+        .f-dummy{
+            font-size: 20px;
+            line-height: 25px;
+            padding:0;
+            margin:20px;
+        }
+        .copyright{
+            font-size: 12px;
+            line-height: 12px;
+            margin:5px 15px 0px 140px;
+            text-align: right;
+        }
+
+        /* FOR HOME PAGE */
+
+            /* Carousel */
+            .banner-carousel{
+                background-image: none !important;
+                width: 100%;
+                height:300px !important;
+                display: inline;
+            }
+
+            .cards-container{
+                flex-direction: column;
+            }
+
+            .slideshow-container{
+                width:100%;
+                height:auto;
+                position: relative;
+            }
+            .banner-carousel .slideshow-container .mySlides img{
+                height:300px;
+            }
+
+            /* Service */
+            .cards-container .card{
+                width: 290px;
+                margin:0;
+            }
+            .cards-container .card h2 {
+                /* margin-left:15px; */
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .cards-container .card p {
+                /* margin-left:15px; */
+                font-size: 14px;
+                line-height: 16px;
+            }
+
+            /* Abouse us */
+            .about-us{
+                height:564px !important;
+            }
+            .about-us .about-container{
+                width:290px;
+                height:411px;
+            }
+
+            .about-us h1{
+                font-size: 32px;
+                line-height: 39px;
+                margin-top: 50px;
+            }
+
+            .about-us p{
+                margin-top: 15px;
+                font-size: 14px;
+                line-height: 26px;
+            }
+
+
+            /* NEWS */
+            .news h1{
+                font-size: 32px;
+                line-height: 39px;
+            }
+
+            .news .group-info .part-info{
+                text-align: left;
+            }
+            .news .group-info .part-info button, 
+            .news .group-info .part-info span {
+                font-size: 16px;
+                line-height: 18px;
+            }
+            /* .news .group-info .part-info button{
+              padding:5px 12px 4px 12px;
+              border: 1px solid red;
+            } */
+            .news .group-info .part-info button.btn-E3007F, 
+            .news .group-info .part-info button.btn-009FE8{
+                padding:5px 12px 4px 12px;
+            }
+
+            .news .news-list{
+                margin:0 auto;
+                width: 200px;
+                margin-top: 30px;
+                margin-left: 63px;
+                padding:0;
+
+            }
+            .news .news-list div{
+                width:200px;
+                height:48px;
+                margin:0;
+                padding: 0;
+                position: relative;
+            }
+
+            .news .news-list div .seems-btn,
+            .news .news-list div .back-btn{
+                width:200px;
+                height:48px;
+            }
+
+            /* .news .news-list div .back-btn{
+            
+            } */
+
+
+            /* MAP */
+            .google-map-container{
+                margin-top: 53px;
+            }
+            .google-map-container .google-map-small-box{
+                width:290px;
+                height:400px;
+                margin-bottom: 50px;
+            }
+}
